@@ -16,6 +16,18 @@ header img {
   margin-left: 10px;  /*Agrega un margen a la izquierda para separarla del contenido del encabezado*/ 
 }
 
+p {    background-color: rgba(227, 227, 227, 0.8);
+    text-align-last: left;
+    padding: 120px;
+    border: 1px;
+    margin: 0px 0px 20px 0px;
+    font-family: "Caveat";
+    background-image: url("../img/imagen-nosotros.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 24px;
+}
+
 .animate__animated.animate__bounce {
   --animate-duration: 1s;
 }
