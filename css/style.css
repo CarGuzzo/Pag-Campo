@@ -166,3 +166,23 @@ form {
   font-family: "Noto+Sans&display"; /* necesito una fuente sans serif para que sea clara sin decorados extra*/
   color: #5a0404;
 }
+
+/*  INTENTO DE QUE EL IFRAME SEA RESPONSIVE. 
+.contenedor-iframe {
+  position: relative;
+  overflow: hidden; 
+  width: 100% ;
+  padding-top: 56.25%;
+  
+} 
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+} */
