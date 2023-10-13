@@ -26,10 +26,15 @@ p {
     border: 1px;
     margin: 0px 0px 20px 0px;
     font-family: "Caveat";
-    background-image: url("../img/imagen-nosotros.png");
+    /*background-image: url("../img/imagen-nosotros.png"); creo que debería ponerla como imagen suelta en section para darle un lugar a img y otro lugar a p sin que se superpongan tanto o transparencia porque marea para leer el p si estan superpuestas.*/
+    opacity: 0,5;
     background-repeat: no-repeat;
     background-position: right center;
     font-size: 24px;
+} 
+
+img{
+  opacity: 0.5; 
 }
 
 .animate__animated.animate__bounce {
@@ -97,7 +102,7 @@ footer {
     border: 1px;
     margin: 0px 0px 0px 0px;
     font-family: "Caveat";
-    font-size: 1em; /*ver si no conviene que todos los font size esten en em (relativa) para que sea responsive?? */
+    font-size: 1px; /*ver si no conviene que todos los font size esten en em (relativa) para que sea responsive?? */
 
   }
   
@@ -167,22 +172,13 @@ form {
   color: #5a0404;
 }
 
-/*  INTENTO DE QUE EL IFRAME SEA RESPONSIVE. 
-.contenedor-iframe {
-  position: relative;
-  overflow: hidden; 
-  width: 100% ;
-  padding-top: 56.25%;
-  
+.flex-container {
+  display: flex; 
+  background-color:#508f50 ; /*dejo el background color solo para visualizar bien cada cosa!! */
 } 
 
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-
-} */
+.flex-container > div {
+  background-color: #dbf762; 
+  margin: 10px;
+  font-size: 10px;  /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
+}
