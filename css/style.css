@@ -93,11 +93,11 @@ h4 {
 footer {
     background-color: #ccd5ae;
     text-align-last: left;
-    padding: 25px;
+    padding: 16px;
     border: 1px;
     margin: 0px 0px 0px 0px;
     font-family: "Caveat";
-    font-size: 12px;
+    font-size: 1em; /*ver si no conviene que todos los font size esten en em (relativa) para que sea responsive?? */
 
   }
   
