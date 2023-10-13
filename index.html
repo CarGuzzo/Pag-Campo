@@ -12,11 +12,15 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet"> 
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- agrego link con ref a una nueva familia de font para las label del formulario -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet"> -->
+    <!-- Mejor tener todo lo de estilos junto, me llevo las fuentes a STYLE.CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
@@ -27,7 +31,7 @@
 <body>
 
   <ul>
-    <li><a href="/index.html">Inicio</a></li>
+    <li><a href="../index.html">Inicio</a></li>
     <li><a href="pages/nosotros.html">Nosotros</a></li>
     <li><a href="pages/bolsones.html"> Bolsones</a>
     <li><a href="pages/preguntas.html">Preguntas frecuentes</a></li>
@@ -61,17 +65,23 @@
 
 <label for="inputNombre">Nombre:</label>
 <br>
-<input type="text" id="inputNombre">
+<!-- agrego atributo name a cada input, se almacenará el dato con esta referencia (backend) -->
+<input type="text" id="inputNombre" name="nombre"> 
 <br>
 
 <label for="inputApellido">Apellido:</label>
 <br>
-<input type="text" id="inputApellido">
+<input type="text" id="inputApellido" name="Apellido">
+<br> 
+
+<label for="mail">E-mail de contacto:</label>
+<br>
+<input type="email" id="mail" name="mail" placeholder="juanperez@mail.com" required>
 <br>
 
 <label for="textAreaMensaje">Comentario</label>
 <br>
-<textarea id="textAreaMensaje" cols="60" rows="10"></textarea>
+<textarea id="textAreaMensaje" name="mensaje" placeholder="Dejanos tu mensaje y te contestaremos a la brevedad. " cols="60" rows="10"></textarea>
 <br>
 
 <input type="submit">
@@ -81,7 +91,7 @@
 <br>
 
 <h4>IMPORTANTE <br> 
-  Si sos cliente nuevo y realizas un pedido  por primera vez, escribinos al 11-0303-4567  para sumarte a la base de datos</h4>
+  Si sos cliente nuevo y realizas un pedido  por primera vez, escribinos al 11-0303-4567 para sumarte a la base de datos</h4>
 
 </section>
 
