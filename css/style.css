@@ -140,17 +140,15 @@ li a:hover {
 
 }
 
-h1 {
-  background-color: rgba(251, 216, 158, 0.8);
-  text-align-last: center;
-  padding: 20px;
+.item0 {
   border: 1px;
-  margin: 0px 0px 0px 0px;
-  font-family: "Caveat";
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
 .item1 {
-  background-color: #d39966;
+  background-color:  #e5989b;
   border: 1px;
   padding: 20px;
   font-size: 30px;
@@ -158,7 +156,7 @@ h1 {
 }
 
 .item2 {
-  background-color: #e06d61;
+  background-color:#fbc4ab;
   border: 1px;
   padding: 20px;
   font-size: 30px;
@@ -166,7 +164,7 @@ h1 {
 }
 
 .item3 {
-  background-color: #d39966;
+  background-color:  #e5989b;
   border: 1px;
   padding: 20px;
   font-size: 30px;
@@ -174,7 +172,7 @@ h1 {
 }
 
 .item4 {
-  background-color: #e06d61;
+  background-color: #fbc4ab;
   border: 1px;
   padding: 20px;
   font-size: 30px;
@@ -182,7 +180,7 @@ h1 {
 }
 
 .item5 {
-  background-color:  #d39966;
+  background-color:  #e5989b;
   border: 1px;
   padding: 20px;
   font-size: 30px;
@@ -190,7 +188,7 @@ h1 {
 }
 
 .item6 {
-  background-color: #e06d61;
+  background-color: #fbc4ab;
   border: 1px;
   padding: 20px;
   font-size: 30px;
@@ -198,7 +196,7 @@ h1 {
 }
 
 .item7 {
-  background-color:  #d39966;
+  background-color:   #e5989b;
   border: 1px;
   padding: 20px;
   font-size: 30px;
@@ -206,7 +204,7 @@ h1 {
 }
 
 .item8 {
-  background-color: #e06d61;
+  background-color: #fbc4ab;
   border: 1px;
   padding: 20px;
   font-size: 30px;
