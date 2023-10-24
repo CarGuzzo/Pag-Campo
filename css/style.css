@@ -148,6 +148,9 @@ form {
   background-color: #dbf762;
   margin: 10px;
   font-size: 10px;  /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
+  border-style:solid ;
+  border-color: #000000;
+  border-radius: 4%; /*lo redondeado de las esquinas*/
 } 
 
 /* A ESTOS DOS NECESITO PONERLES TAMAÑO PERO RESPONSIVE, CONT-TEXT 30% Y LLEGA UN PUNTO QUE APAREZCA HORARIOS ARRIBA Y MAPA ABAJO.  */
