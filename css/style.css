@@ -16,10 +16,10 @@ header {
 
 header img {
   float: right; /* Alinea la imagen a la derecha */
-  margin-left: 10px;  /*Agrega un margen a la izquierda para separarla del contenido del encabezado*/ 
+  margin-left: 10px;  /*Agrega un margen a la izquierda para separarla del contenido del encabezado*/
 }
 
-p {    
+p {
     background-color: rgba(227, 227, 227, 0.8);
     text-align-last: left;
     padding: 120px;
@@ -31,10 +31,10 @@ p {
     background-repeat: no-repeat;
     background-position: right center;
     font-size: 24px;
-} 
+}
 
 img{
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 
 .animate__animated.animate__bounce {
@@ -57,7 +57,7 @@ main {
     padding: 10px;
     gap: 20px 50px;
   }
-  
+
 .grid-item  {
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px;
@@ -83,7 +83,7 @@ h2 {
     border: 1px;
     margin: 0px 0px 20px 0px;
     font-family: "Caveat";
-  }  
+  }
 
 h4 {
     background-color: rgba(243, 175, 67, 0.8);
@@ -105,7 +105,7 @@ footer {
     font-size: 1px; /*ver si no conviene que todos los font size esten en em (relativa) para que sea responsive?? */
 
   }
-  
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -113,11 +113,11 @@ ul {
     overflow: hidden;
     background-color: #ccd5ae;
   }
-  
+
 li {
     float: left;
   }
-  
+
 li a {
     display: block;
     color: black;
@@ -125,7 +125,7 @@ li a {
     padding: 30px 30px;
     text-decoration: none;
   }
-  
+
 li a:hover {
     background-color: #5d6935;
   }
@@ -139,12 +139,12 @@ form {
 
 <<<<<<< HEAD
 .flex-container {
-  display: flex; 
+  display: flex;
   background-color:#508f50 ; /*dejo el background color solo para visualizar bien cada cosa!! */
-} 
+}
 
 .flex-container > div {
-  background-color: #dbf762; 
+  background-color: #dbf762;
   margin: 10px;
   font-size: 10px;  /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
 =======
@@ -236,4 +236,30 @@ form {
   font-size: 30px;
   text-align: left;
 >>>>>>> main
+}
+
+
+
+/* Media Queries para diseño responsive de bolsones.html  */
+
+/* para mobile:  */
+@media only screen and (max-width: 600px){
+  .caja{
+    width: 100%;
+  }
+
+}
+
+/* para tablets */ 
+@media only screen and (min-width: 600px){
+  .caja{
+    width: 50%;
+  }
+}
+
+/* para computadoras: */
+@media only screen and (min-width: 992px){
+  .caja{
+    width: 33% ;
+  }
 }
