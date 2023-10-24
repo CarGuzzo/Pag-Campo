@@ -137,17 +137,28 @@ form {
   color: #5a0404;
 }
 
-<<<<<<< HEAD
+
 .flex-container {
-  display: flex;
+  display: flex; /*por haber puesto esto lo que haya adentro lo trata como elemento de linea*/
   background-color:#508f50 ; /*dejo el background color solo para visualizar bien cada cosa!! */
+  justify-content: center; 
 }
 
 .flex-container > div {
   background-color: #dbf762;
   margin: 10px;
   font-size: 10px;  /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
-=======
+} 
+
+/* A ESTOS DOS NECESITO PONERLES TAMAÑO PERO RESPONSIVE, CONT-TEXT 30% Y LLEGA UN PUNTO QUE APAREZCA HORARIOS ARRIBA Y MAPA ABAJO.  */
+.contenedor-text {
+  width: 200px;
+} 
+
+/* .contenedor-iframe{
+  width: 70%;
+} */
+
 .mi-main {
   background-color: rgba(251, 216, 158, 0.8);
   /*text-align-last: left;*/
@@ -235,31 +246,34 @@ form {
   padding: 20px;
   font-size: 30px;
   text-align: left;
->>>>>>> main
 }
 
+.flex-container{
+  display: flex;
+  flex-direction: row; /*aunque no lo escriba así es por defecto*/
+  flex-wrap: wrap;
+}
 
-
-/* Media Queries para diseño responsive de bolsones.html  */
+/* Media Queries para diseño responsive de bolsones.html  VER POR QUÉ NO FUNCIONA COMO EN AMIGOS CALLEJEROS*/
 
 /* para mobile:  */
-@media only screen and (max-width: 600px){
+/* @media only screen and (max-width: 600px){
   .caja{
     width: 100%;
   }
 
-}
+} */
 
 /* para tablets */ 
-@media only screen and (min-width: 600px){
+/* @media only screen and (min-width: 600px){
   .caja{
     width: 50%;
   }
-}
+} */
 
-/* para computadoras: */
-@media only screen and (min-width: 992px){
+/*Para notebooks*/
+/* @media only screen and (min-width: 992px){
   .caja{
     width: 33% ;
   }
-}
+} */

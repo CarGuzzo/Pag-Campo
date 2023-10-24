@@ -28,7 +28,7 @@
 
   <!-- acá en main voy a poner las opciones de bolsones. -->
   <!-- ver forma menos "rudimentaria" de poner los li uno abajo del otro que br -->
-  <main>
+  <main class="flex-container">
     <div class="caja">
       <h1>Bolsón 1: 8kg $4000</h1>
       <h2>"Verduras en Transición"</h2>
@@ -72,7 +72,7 @@
 
     <div class="caja">
       <h1>Bolsón 3: 6kg $5500</h1>
-      <h2>Frutas</h2>
+      <h2>"Frutas"</h2>
       <ul>
         <li>Banana</li><br>
         <li>Mandarina</li><br>
@@ -89,19 +89,15 @@
         <br>
       </form>
     </div>
-
-    <div>
-      <!-- acá va un botón que diga agregá tu selección al carrito. -->
-      <button type="button" onclick="alert('Tu selección fue agregada al carrito de compras.')">Agregar al carrito.</button>
-
-    </div>
-
-
   </main>
 
-  <section>
+  <div class="flex-container">
+    <button type="button" onclick="alert('Tu selección fue agregada al carrito de compras.')">Agregar al carrito.</button>
+  </div>
+
+  <section class="flex-container">
     <div class="grid-container">
-      <div class="grid-item">Envíos sin costo <br> en Zona Sur</div>
+      <div class="grid-item">Envíos sin costo en Zona Sur</div>
       <div class="grid-item">Compra mínima <br> $2000</div>
       <div class="grid-item">Medios de pago: <br> Efectivo - Mercado Pago</div>
     </div>
