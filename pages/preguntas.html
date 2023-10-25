@@ -6,19 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Del Campo a la mesa</title>
   <!--    <link rel="shortcut icon" href="img/verdurass.jpg" type="image/x-icon"> -->
-  <link rel="stylesheet" href="../css/style.css">
+
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- <link rel="stylesheet" type="text/css" href="styles.css"> ESTE LINK NO FUNCIONA!!!!!!!!!!!!1 NO VINCULA!!!! -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
+ 
   <script src="../js/script-preguntas.js"></script>
-
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 
@@ -38,52 +39,51 @@
 
       <h1>Respondemos tus dudas:</h1>
 
-      <ol>
+      <button class="acordeon">1-¿Cómo puedo hacer mi pedido? </button>
+      <div class="panel">
+        <p> Ve a la sección de "Bolsones", allí podrás encontrar no solo los bolsones disponibles, sino también un
+          link donde te dirigirá para realizar tu pedido.</p>
+      </div>
 
-        <div class="item1">
-          <li>1-¿Cómo puedo hacer mi pedido? </li> 
-          <p> Ve a la sección de "Bolsones", allí podrás encontrar no solo los bolsones disponibles, sino también un
-            link donde te dirigirá para realizar tu pedido.</p>
-        </div>
+      <button class="acordeon">2- ¿Qué días entregan? - ¿En qué horarios?</button>
+      <div class="panel">
+        <p>Entregamos martes y miércoles de 10:00 a 19:00 hs.</p>
+      </div>
 
-        <div class="item2">
-          <li>2- ¿Qué días entregan? - ¿En qué horarios?</li>
+      <button class="acordeon">3- ¿Qué traen los bolsones?</button>
+      <div class="panel">
+        <p>El contenido de cada bolsón varía cada semana. Podés ver que traen en la sección de "Bolsones".</p>
+      </div>
 
-          <p>Entregamos martes y miércoles de 10:00 a 19:00 hs.</p>
-        </div>
+      <button class="acordeon"> 4- ¿En qué zonas entregan?</button>
+      <div class="panel">
+        <p>Los martes en: Banfield, Remedios de Escalada, Lanús, Gerli, Lomas de Zamora y Temperley.
+          Los miércoles en: Glew, Longchamps, Burzaco, Claypole, Don Orione, Rafael Calzada, José Marmol, Adrogué, Monte
+          Grande, Lavallol, Turdera y Luis Guillón.</p>
+      </div>
 
-        <div class="item3">
-          <li>3- ¿Qué traen los bolsones?</li>
-          <p>El contenido de cada bolsón varía cada semana. Podés ver que traen en la sección de "Bolsones".</p>
-        </div>
+      <button class="acordeon"> 5- ¿Por qué medios puedo comunicarme?</button>
+      <div class="panel">
+        <p>Podés escribirnos al whatsApp al 11-0303-4567 de 8:00 a 20:00 hs.</p>
+      </div>
 
-        <div class="item4">
-          <li>4- ¿En qué zonas entregan?</li>
-          <p>Los martes en: Banfield, Remedios de Escalada, Lanús, Gerli, Lomas de Zamora y Temperley.
-            Los miércoles en: Glew, Longchamps, Burzaco, Claypole, Don Orione, Rafael Calzada, José Marmol, Adrogué,
-            Monte
-            Grande, Lavallol, Turdera y Luis Guillón.</p>
-        </div>
+      <button class="acordeon"> 6- ¿Los envíos tienen costo?</button>
+      <div class="panel">
+        <p>Los envíos por zona sur son sin costo. Preguntanos por otras zonas.</p>
+      </div>
 
-        <div class="item5">
-          <li>5- ¿Por qué medios puedo comunicarme?</li>
-          <p>Podés escribirnos al whatsApp al 11-0303-4567 de 8:00 a 20:00 hs.</p>
-        </div>
 
-        <div class="item6">
-          <li>6- ¿Los envíos tienen costo?</li>
-          <p>Los envíos por zona sur son sin costo. Preguntanos por otras zonas.</p>
-        </div>
+      <button class="acordeon">7- ¿Qué hago si tengo un problema con mi pedido?</button>
+      <div class="panel">
+        <p>¡No te preocupes! Escribinos al whatsApp con tu número de pedido y vamos a darte una solución.</p>
+      </div>
 
-        <div class="item7">
-          <li>7- ¿Qué hago si tengo un problema con mi pedido?</li>
-          <p>¡No te preocupes! Escribinos al whatsApp con tu número de pedido y vamos a darte una solución.</p>
-        </div>
 
-        <div class="item8">
-          <li>8- ¿Qué pasa si no estoy cuando pasan a entregar mi pedido?</li>
-          <p>Si tuviste que salir ese mismo día por una emergencia ¡Vamos a volver a pasar! Escribinos por whatsApp con tu nº de pedido para poder reprogramarlo. Este servicio tiene un costo extra de $1500.</p>
-        </div>
+      <button class="acordeon">8- ¿Qué pasa si no estoy cuando pasan a entregar mi pedido? </button>
+      <div class="panel">
+        <p>Si tuviste que salir ese mismo día por una emergencia ¡Vamos a volver a pasar! Escribinos por whatsApp con tu
+          nº de pedido para poder reprogramarlo. Este servicio tiene un costo extra de $1500.</p>
+      </div>
 
       </ol>
 

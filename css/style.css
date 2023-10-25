@@ -180,6 +180,8 @@ form {
 
 }
 
+/* LO COMENTO PARA PROBAR, ESTARÍA MAL REPETIR UNO POR UNO.  */
+/* 
 .item0 {
   border: 1px;
   padding: 20px;
@@ -249,7 +251,32 @@ form {
   padding: 20px;
   font-size: 30px;
   text-align: left;
+} */
+
+.acordeon {
+  background-color:#47a847;
+  color: #000000;
+  cursor: pointer; 
+  padding: 20px;
+  width: 100%;
+  border: none; 
+  text-align: left;
+  outline: none; 
+  font-size: 25px;
 }
+
+.active, .acordeon:hover{
+  background-color:rgb(110, 240, 110) ;
+}
+
+.panel{
+  padding: 0px 20px; /*indico padding de arriba - abajo y izq - derecha*/
+  display: none; /*inicialmente esto no se va a ver*/
+  background-color:#5d6935 ;
+  overflow: hidden; /*en el caso que el contenido sobrepase el borde que se oculte*/
+}
+
+
 
 .flex-container{
   display: flex;
