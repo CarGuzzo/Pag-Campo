@@ -53,13 +53,15 @@ main {
 
 .grid-container  {
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: auto auto auto;
     padding: 10px;
     gap: 20px 50px;
   }
 
 .grid-item  {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: #ffffffcc;
+    flex-wrap: wrap;
     border: 1px;
     padding: 20px;
     font-size: 30px;
@@ -86,7 +88,7 @@ h2 {
   }
 
 h4 {
-    background-color: rgba(243, 175, 67, 0.8);
+    background-color: #f3af43cc;
     text-align-last: center;
     padding: 10px;
     border: 1px;
@@ -106,6 +108,8 @@ footer {
 
   }
 
+
+/* ------------- ESTILO DEL NAVBAR ----------  */
 ul {
     list-style-type: none;
     margin: 0;
@@ -126,11 +130,15 @@ li a {
     text-decoration: none;
   }
 
+/* que al pasar el cursor por el navbar cambie de color: OK  */
 li a:hover {
     background-color: #5d6935;
-  }
+  } 
 
 
+
+
+/* ------------------ ESTILO DEL FORMULARIO ---------------    */
 form {
   font-size: 1em ;
   font-family: "Noto+Sans&display"; /* necesito una fuente sans serif para que sea clara sin decorados extra*/
@@ -140,8 +148,10 @@ form {
 
 .flex-container {
   display: flex; /*por haber puesto esto lo que haya adentro lo trata como elemento de linea*/
+  flex-wrap: wrap;
   background-color:#508f50 ; /*dejo el background color solo para visualizar bien cada cosa!! */
   justify-content: center; 
+
 }
 
 .flex-container > div {
@@ -180,81 +190,9 @@ form {
 
 }
 
-/* LO COMENTO PARA PROBAR, ESTARÍA MAL REPETIR UNO POR UNO.  */
-/* 
-.item0 {
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.item1 {
-  background-color:  #e5989b;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.item2 {
-  background-color:#fbc4ab;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.item3 {
-  background-color:  #e5989b;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.item4 {
-  background-color: #fbc4ab;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.item5 {
-  background-color:  #e5989b;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.item6 {
-  background-color: #fbc4ab;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.item7 {
-  background-color:   #e5989b;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-}
-
-.item8 {
-  background-color: #fbc4ab;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: left;
-} */
 
 .acordeon {
-  background-color:#47a847;
+  background-color:#6fc05b;
   color: #000000;
   cursor: pointer; 
   padding: 20px;
@@ -266,23 +204,16 @@ form {
 }
 
 .active, .acordeon:hover{
-  background-color:rgb(110, 240, 110) ;
+  background-color: #f3af43cc ;
 }
 
 .panel{
   padding: 0px 20px; /*indico padding de arriba - abajo y izq - derecha*/
-  display: none; /*inicialmente esto no se va a ver*/
-  background-color:#5d6935 ;
+  display: none; /*inicialmente esto no se va a ver */ 
+  background-color: #ffffffcc ;
   overflow: hidden; /*en el caso que el contenido sobrepase el borde que se oculte*/
 }
 
-
-
-.flex-container{
-  display: flex;
-  flex-direction: row; /*aunque no lo escriba así es por defecto*/
-  flex-wrap: wrap;
-}
 
 /* Media Queries para diseño responsive de bolsones.html  VER POR QUÉ NO FUNCIONA COMO EN AMIGOS CALLEJEROS*/
 
