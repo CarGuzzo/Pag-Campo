@@ -17,9 +17,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
- 
-  <script src="../js/script-preguntas.js"></script>
+
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <!-- <script src="../js/script-preguntas.js"></script>  POR QUÉ NO ME FUNCIONA ESTA ETIQUETA CUANDO LA PONGO EN HEAD?????????' ALTERNATIVA QUE SI ME FUNCIONA: PONER LA INFO DE SCRIPT-PREGUNTAS.JS EN UNA ETIQUETA SCRIPT AL FINAL DEL BODY, VER!!!!!!!!!!11 '-->
+
 </head>
 
 
@@ -131,6 +132,25 @@
     <h3>Copyright - 2023 Del Campo a la mesa</h3>
 
   </footer>
+
+  <script>
+    let elementosAcordeon = document.getElementsByClassName("acordeon"); //acá se van a guardar los elementos que tengan clase acordeon 
+
+    // qué queremos que ocurra? 
+    for (let i = 0; i < elementosAcordeon.length; i++) {
+      elementosAcordeon[i].addEventListener("click", function (){
+        this.classList.toggle("active"); //asi le asigno la clase activo o la saco en función de si está activada o no. 
+        let panel = this.nextElementSibling; //agarra el elemento hermano, en la misma jerarquia
+        if (panel.style.display == "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      })
+
+    }
+
+  </script>
 
 </body>
 
