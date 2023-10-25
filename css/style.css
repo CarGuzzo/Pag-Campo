@@ -2,38 +2,40 @@
 
 
 header {
-    background-color: rgba(227, 227, 227, 0.8);
-    text-align-last: left;
-    padding: 120px;
-    border: 1px;
-    margin: 0px 0px 20px 0px;
-    font-family: "Caveat";
-    background-image: url("../img/fruits-7357732_640.png");
-    background-repeat: no-repeat;
-    background-position: right center;
-    font-size: 12px;
+  background-color: rgba(227, 227, 227, 0.8);
+  text-align-last: left;
+  padding: 120px;
+  border: 1px;
+  margin: 0px 0px 20px 0px;
+  font-family: "Caveat";
+  background-image: url("../img/fruits-7357732_640.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-size: 12px;
 }
 
 header img {
-  float: right; /* Alinea la imagen a la derecha */
-  margin-left: 10px;  /*Agrega un margen a la izquierda para separarla del contenido del encabezado*/
+  float: right;
+  /* Alinea la imagen a la derecha */
+  margin-left: 10px;
+  /*Agrega un margen a la izquierda para separarla del contenido del encabezado*/
 }
 
 p {
-    background-color: rgba(227, 227, 227, 0.8);
-    text-align-last: left;
-    padding: 120px;
-    border: 1px;
-    margin: 0px 0px 20px 0px;
-    font-family: "Caveat";
-    /*background-image: url("../img/imagen-nosotros.png"); creo que debería ponerla como imagen suelta en section para darle un lugar a img y otro lugar a p sin que se superpongan tanto o transparencia porque marea para leer el p si estan superpuestas.*/
-    opacity: 0,5;
-    background-repeat: no-repeat;
-    background-position: right center;
-    font-size: 24px;
+  background-color: rgba(227, 227, 227, 0.8);
+  text-align-last: left;
+  padding: 120px;
+  border: 1px;
+  margin: 0px 0px 20px 0px;
+  font-family: "Caveat";
+  /*background-image: url("../img/imagen-nosotros.png"); creo que debería ponerla como imagen suelta en section para darle un lugar a img y otro lugar a p sin que se superpongan tanto o transparencia porque marea para leer el p si estan superpuestas.*/
+  opacity: 0, 5;
+  background-repeat: no-repeat;
+  background-position: right center;
+  font-size: 24px;
 }
 
-img{
+img {
   opacity: 0.5;
 }
 
@@ -42,135 +44,161 @@ img{
 }
 
 main {
-    background-color: rgba(251, 216, 158, 0.8);
-    /*text-align-last: left;*/
-    text-align-last: center;
-    padding: 25px;
-    border: 1px;
-    margin: 0px 0px 20px 0px;
-    font-family: "Caveat";
-  }
+  background-color: rgba(251, 216, 158, 0.8);
+  /*text-align-last: left;*/
+  text-align-last: center;
+  padding: 25px;
+  border: 1px;
+  margin: 0px 0px 20px 0px;
+  font-family: "Caveat";
+}
 
-.grid-container  {
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    gap: 20px 50px;
-  }
+/* ---------------- ESTILO CAJA DE INFORMACIÓN (CON 3 ITEMS) ------------------------  */
 
-.grid-item  {
-    background-color: #ffffffcc;
-    flex-wrap: wrap;
-    border: 1px;
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
-  }
+.info-container {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 20px 50px;
+}
+
+.info-item {
+  background-color: #ffffffcc;
+  flex-wrap: wrap;
+  border: 1px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+/* -------------------------------------------------------------------------------------- */
+
 
 section {
-    background-color: rgba(251, 216, 158, 0.8);
-    text-align-last: center;
-    padding: 10px;
-    border: 1px;
-    margin: 0px 0px 20px 0px;
-    font-family: "Caveat";
-  }
+  background-color: rgba(251, 216, 158, 0.8);
+  text-align-last: center;
+  padding: 10px;
+  border: 1px;
+  margin: 0px 0px 20px 0px;
+  font-family: "Caveat";
+}
 
 
 h2 {
-    background-color: rgba(243, 175, 67, 0.8);
-    text-align-last: center;
-    padding: 10px;
-    border: 1px;
-    margin: 0px 0px 20px 0px;
-    font-family: "Caveat";
-  }
+  background-color: rgba(243, 175, 67, 0.8);
+  text-align-last: center;
+  padding: 10px;
+  border: 1px;
+  margin: 0px 0px 20px 0px;
+  font-family: "Caveat";
+}
 
 h4 {
-    background-color: #f3af43cc;
-    text-align-last: center;
-    padding: 10px;
-    border: 1px;
-    margin: 0px 0px 20px 0px;
-    font-family: "Caveat";
+  background-color: #f3af43cc;
+  text-align-last: center;
+  padding: 10px;
+  border: 1px;
+  margin: 0px 0px 20px 0px;
+  font-family: "Caveat";
 
 }
 
 footer {
-    background-color: #ccd5ae;
-    text-align-last: left;
-    padding: 16px;
-    border: 1px;
-    margin: 0px 0px 0px 0px;
-    font-family: "Caveat";
-    font-size: 1px; /*ver si no conviene que todos los font size esten en em (relativa) para que sea responsive?? */
+  background-color: #ccd5ae;
+  text-align-last: left;
+  padding: 16px;
+  border: 1px;
+  margin: 0px 0px 0px 0px;
+  font-family: "Caveat";
+  font-size: 1px;
+  /*ver si no conviene que todos los font size esten en em (relativa) para que sea responsive?? */
 
-  }
+}
 
 
 /* ------------- ESTILO DEL NAVBAR ----------  */
+
+.navbar {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: #ccd5ae;
+}
+
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ccd5ae;
-  }
+  list-style-type: none; /*saca el puntito de lista */
+  margin: 10px;
+  padding: 10px;
+  overflow: hidden;
+
+
+}
 
 li {
-    float: left;
-  }
+  float: left;
+} 
+
 
 li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 30px 30px;
-    text-decoration: none;
-  }
+  /* display: block; sacando esto no queda tan ancho, se limita al texto */
+  color: #000000;
+  text-align: right;
+  padding: 30px 30px;
+  text-decoration: none;
+}
 
-/* que al pasar el cursor por el navbar cambie de color: OK  */
+
+/*que al pasar el cursor por el navbar cambie de color: OK  */
 li a:hover {
-    background-color: #5d6935;
-  } 
-
+  background-color: #5d6935;
+}
 
 
 
 /* ------------------ ESTILO DEL FORMULARIO ---------------    */
 form {
-  font-size: 1em ;
-  font-family: "Noto+Sans&display"; /* necesito una fuente sans serif para que sea clara sin decorados extra*/
+  font-size: 1em;
+  font-family: "Noto+Sans&display";
+  /* necesito una fuente sans serif para que sea clara sin decorados extra*/
   color: #5a0404;
 }
 
 
 .flex-container {
-  display: flex; /*por haber puesto esto lo que haya adentro lo trata como elemento de linea*/
+  display: flex;
+  /*por haber puesto esto lo que haya adentro lo trata como elemento de linea*/
   flex-wrap: wrap;
-  background-color:#508f50 ; /*dejo el background color solo para visualizar bien cada cosa!! */
-  justify-content: center; 
+  background-color: #508f50;
+  /*dejo el background color solo para visualizar bien cada cosa!! */
+  justify-content: center;
 
 }
 
-.flex-container > div {
+.flex-container>div {
   background-color: #dbf762;
   margin: 10px;
-  font-size: 10px;  /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
-  border-style:solid ;
+  font-size: 10px;
+  /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
+  border-style: solid;
   border-color: #000000;
-  border-radius: 4%; /*lo redondeado de las esquinas*/
-} 
+  border-radius: 4%;
+  /*lo redondeado de las esquinas*/
+}
 
+
+
+
+
+/* -------------- ESTILO IFRAME ---------------  */
 /* A ESTOS DOS NECESITO PONERLES TAMAÑO PERO RESPONSIVE, CONT-TEXT 30% Y LLEGA UN PUNTO QUE APAREZCA HORARIOS ARRIBA Y MAPA ABAJO.  */
 .contenedor-text {
   width: 200px;
-} 
+}
 
 /* .contenedor-iframe{
   width: 70%;
 } */
+/* ------------------------------------------------------- */
 
 .mi-main {
   background-color: rgba(251, 216, 158, 0.8);
@@ -191,28 +219,36 @@ form {
 }
 
 
+
+/* ------------ESTILO DE PREGUNTAS FRECUENTES DESPLEGABLES ---------- */
 .acordeon {
-  background-color:#6fc05b;
+  background-color: #6fc05b;
   color: #000000;
-  cursor: pointer; 
+  cursor: pointer;
   padding: 20px;
   width: 100%;
-  border: none; 
+  border: none;
   text-align: left;
-  outline: none; 
+  outline: none;
   font-size: 25px;
 }
 
-.active, .acordeon:hover{
-  background-color: #f3af43cc ;
+.active,
+.acordeon:hover {
+  background-color: #f3af43cc;
 }
 
-.panel{
-  padding: 0px 20px; /*indico padding de arriba - abajo y izq - derecha*/
-  display: none; /*inicialmente esto no se va a ver */ 
-  background-color: #ffffffcc ;
-  overflow: hidden; /*en el caso que el contenido sobrepase el borde que se oculte*/
+.panel {
+  padding: 0px 20px;
+  /*indico padding de arriba - abajo y izq - derecha*/
+  display: none;
+  /*inicialmente esto no se va a ver */
+  background-color: #ffffffcc;
+  overflow: hidden;
+  /*en el caso que el contenido sobrepase el borde que se oculte*/
 }
+
+/* --------------------------------------------------------- */
 
 
 /* Media Queries para diseño responsive de bolsones.html  VER POR QUÉ NO FUNCIONA COMO EN AMIGOS CALLEJEROS*/
@@ -225,7 +261,7 @@ form {
 
 } */
 
-/* para tablets */ 
+/* para tablets */
 /* @media only screen and (min-width: 600px){
   .caja{
     width: 50%;
