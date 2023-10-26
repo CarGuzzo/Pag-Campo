@@ -1,276 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-
-
-header {
-  background-color: rgba(227, 227, 227, 0.8);
-  text-align-last: left;
-  padding: 120px;
-  border: 1px;
-  margin: 0px 0px 20px 0px;
-  font-family: "Caveat";
-  background-image: url("../img/fruits-7357732_640.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  font-size: 12px;
-}
-
-header img {
-  float: right;
-  /* Alinea la imagen a la derecha */
-  margin-left: 10px;
-  /*Agrega un margen a la izquierda para separarla del contenido del encabezado*/
-}
-
-p {
-  background-color: rgba(227, 227, 227, 0.8);
-  text-align-last: left;
-  padding: 120px;
-  border: 1px;
-  margin: 0px 0px 20px 0px;
-  font-family: "Caveat";
-  /*background-image: url("../img/imagen-nosotros.png"); creo que debería ponerla como imagen suelta en section para darle un lugar a img y otro lugar a p sin que se superpongan tanto o transparencia porque marea para leer el p si estan superpuestas.*/
-  opacity: 0, 5;
-  background-repeat: no-repeat;
-  background-position: right center;
-  font-size: 24px;
-}
-
-img {
-  opacity: 0.5;
-}
-
-.animate__animated.animate__bounce {
-  --animate-duration: 1s;
-}
-
-main {
-  background-color: rgba(251, 216, 158, 0.8);
-  /*text-align-last: left;*/
-  text-align-last: center;
-  padding: 25px;
-  border: 1px;
-  margin: 0px 0px 20px 0px;
-  font-family: "Caveat";
-}
-
-/* ---------------- ESTILO CAJA DE INFORMACIÓN (CON 3 ITEMS) ------------------------  */
-
-.info-container {
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
-  gap: 20px 50px;
-}
-
-.info-item {
-  background-color: #ffffffcc;
-  flex-wrap: wrap;
-  border: 1px;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-}
-/* -------------------------------------------------------------------------------------- */
-
-
-section {
-  background-color: rgba(251, 216, 158, 0.8);
-  text-align-last: center;
-  padding: 10px;
-  border: 1px;
-  margin: 0px 0px 20px 0px;
-  font-family: "Caveat";
-}
-
-
-h2 {
-  background-color: rgba(243, 175, 67, 0.8);
-  text-align-last: center;
-  padding: 10px;
-  border: 1px;
-  margin: 0px 0px 20px 0px;
-  font-family: "Caveat";
-}
-
-h4 {
-  background-color: #f3af43cc;
-  text-align-last: center;
-  padding: 10px;
-  border: 1px;
-  margin: 0px 0px 20px 0px;
-  font-family: "Caveat";
-
-}
-
-footer {
-  background-color: #ccd5ae;
-  text-align-last: left;
-  padding: 16px;
-  border: 1px;
-  margin: 0px 0px 0px 0px;
-  font-family: "Caveat";
-  font-size: 1px;
-  /*ver si no conviene que todos los font size esten en em (relativa) para que sea responsive?? */
-
-}
-
-
 /* ------------- ESTILO DEL NAVBAR ----------  */
 
 .navbar {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  background-color: #ccd5ae;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #ccd5ae;
+    padding: 0px, 0px, 0px, 0px;
 }
 
-ul {
-  list-style-type: none; /*saca el puntito de lista */
-  margin: 10px;
-  padding: 10px;
-  overflow: hidden;
-
+.navbar-items {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    /*saca el puntito de lista */
+    overflow: hidden;
+    /*recordar qué era esto??*/
+    margin: 0px;
+    padding: 0px;
+    /*esto tiene que quedar así*/
+    height: 100%;
 
 }
-
-li {
-  float: left;
-} 
-
-
-li a {
-  /* display: block; sacando esto no queda tan ancho, se limita al texto */
-  color: #000000;
-  text-align: right;
-  padding: 30px 30px;
-  text-decoration: none;
+ 
+.navbar-titulos a {
+    color: #000000;
+    text-align: left;
+    margin: 40px 40px;
+    text-decoration: none;
 }
-
 
 /*que al pasar el cursor por el navbar cambie de color: OK  */
-li a:hover {
-  background-color: #5d6935;
+.navbar-items :hover {
+    background-color: #5d6935;
 }
-
-
-
-/* ------------------ ESTILO DEL FORMULARIO ---------------    */
-form {
-  font-size: 1em;
-  font-family: "Noto+Sans&display";
-  /* necesito una fuente sans serif para que sea clara sin decorados extra*/
-  color: #5a0404;
-}
-
-
-.flex-container {
-  display: flex;
-  /*por haber puesto esto lo que haya adentro lo trata como elemento de linea*/
-  flex-wrap: wrap;
-  background-color: #508f50;
-  /*dejo el background color solo para visualizar bien cada cosa!! */
-  justify-content: center;
-
-}
-
-.flex-container>div {
-  background-color: #dbf762;
-  margin: 10px;
-  font-size: 10px;
-  /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
-  border-style: solid;
-  border-color: #000000;
-  border-radius: 4%;
-  /*lo redondeado de las esquinas*/
-}
-
-
-
-
-
-/* -------------- ESTILO IFRAME ---------------  */
-/* A ESTOS DOS NECESITO PONERLES TAMAÑO PERO RESPONSIVE, CONT-TEXT 30% Y LLEGA UN PUNTO QUE APAREZCA HORARIOS ARRIBA Y MAPA ABAJO.  */
-.contenedor-text {
-  width: 200px;
-}
-
-/* .contenedor-iframe{
-  width: 70%;
-} */
-/* ------------------------------------------------------- */
-
-.mi-main {
-  background-color: rgba(251, 216, 158, 0.8);
-  /*text-align-last: left;*/
-  text-align-last: left;
-  padding: 25px;
-  border: 1px;
-  margin: 0px 0px 20px 0px;
-  font-family: "Caveat";
-}
-
-.grid-container1 {
-  display: grid;
-  grid-template-columns: auto;
-  padding: 10px;
-  gap: 20px 50px;
-
-}
-
-
-
-/* ------------ESTILO DE PREGUNTAS FRECUENTES DESPLEGABLES ---------- */
-.acordeon {
-  background-color: #6fc05b;
-  color: #000000;
-  cursor: pointer;
-  padding: 20px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 25px;
-}
-
-.active,
-.acordeon:hover {
-  background-color: #f3af43cc;
-}
-
-.panel {
-  padding: 0px 20px;
-  /*indico padding de arriba - abajo y izq - derecha*/
-  display: none;
-  /*inicialmente esto no se va a ver */
-  background-color: #ffffffcc;
-  overflow: hidden;
-  /*en el caso que el contenido sobrepase el borde que se oculte*/
-}
-
-/* --------------------------------------------------------- */
-
-
-/* Media Queries para diseño responsive de bolsones.html  VER POR QUÉ NO FUNCIONA COMO EN AMIGOS CALLEJEROS*/
-
-/* para mobile:  */
-/* @media only screen and (max-width: 600px){
-  .caja{
-    width: 100%;
-  }
-
-} */
-
-/* para tablets */
-/* @media only screen and (min-width: 600px){
-  .caja{
-    width: 50%;
-  }
-} */
-
-/*Para notebooks*/
-/* @media only screen and (min-width: 992px){
-  .caja{
-    width: 33% ;
-  }
-} */
