@@ -153,10 +153,69 @@ footer {
     }
 }
 
+/* **************************** N O S O T R O S ************************** */
+
+.caja-donde-encontrarnos {
+    display: flex;
+    column-gap: 10px;
+    margin: 10px;
+}
+.contenedor-text { 
+    text-align: center;
+    padding: 20px;
+    background-color: #ccd5ae;
+    flex-basis: 50px ;
+
+   
+}
+
+.contenedor-iframe{
+    flex-grow:5;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .caja-donde-encontrarnos {
+        flex-direction: column;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .caja-donde-encontrarnos {
+        flex-direction: column;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .caja-donde-encontrarnos{
+        flex-direction: row;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
 
 
 
-/* *************************PREGUNTAS FRECUENTES ********************************** */
+
+
+
+
+
+/* ************************ B O L S O N E S ***************************** */
+
+
+
+
+
+
+
+
+
+/* *************************P R E G U N T A S   F R E C U E N T E S ********************************** */
 
 /* ------------ESTILO DE DESPLEGABLES ---------- */
 .acordeon {
@@ -171,7 +230,6 @@ footer {
     font-size: 25px;
 }
 
-.active,
 .acordeon:hover {
     background-color: #6fc05b;
 }
