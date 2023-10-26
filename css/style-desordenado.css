@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); ya lo pasé!! */
 
 
-header {
+/* header {
   background-color: rgba(227, 227, 227, 0.8);
   text-align-last: left;
   padding: 120px;
@@ -12,9 +12,9 @@ header {
   background-repeat: no-repeat;
   background-position: right center;
   font-size: 12px;
-}
+} YA LO PASÉ !! */
 
-header img {
+header img { /*ESTO LO SAQUÉ EN EL CSS ORDENADO Y NO VEO QUE CAMBIE EN NADA */
   float: right;
   /* Alinea la imagen a la derecha */
   margin-left: 10px;
@@ -43,19 +43,19 @@ img {
   --animate-duration: 1s;
 }
 
-main {
+/* main {
   background-color: rgba(251, 216, 158, 0.8);
-  /*text-align-last: left;*/
-  text-align-last: center;
+ text-align-last: left;
+ text-align-last: center;
   padding: 25px;
   border: 1px;
   margin: 0px 0px 20px 0px;
   font-family: "Caveat";
-}
+} NO LO USÉ */
 
-/* ---------------- ESTILO CAJA DE INFORMACIÓN (CON 3 ITEMS) ------------------------  */
+/* ---------------- ESTILO CAJA DE INFORMACIÓN (CON 3 ITEMS) ------------------------  YA LO PASÉ*/
 
-.info-container {
+/* .info-container {
   display: grid;
   flex-wrap: wrap;
   grid-template-columns: auto auto auto;
@@ -70,7 +70,7 @@ main {
   padding: 20px;
   font-size: 30px;
   text-align: center;
-}
+} LISTO YA LO PASÉ */
 /* -------------------------------------------------------------------------------------- */
 
 
@@ -103,7 +103,7 @@ h4 {
 
 }
 
-footer {
+/* footer {
   background-color: #ccd5ae;
   text-align-last: left;
   padding: 16px;
@@ -111,9 +111,9 @@ footer {
   margin: 0px 0px 0px 0px;
   font-family: "Caveat";
   font-size: 1px;
-  /*ver si no conviene que todos los font size esten en em (relativa) para que sea responsive?? */
+  /*LISTO*/
 
-}
+
 
 
 /* ------------- ESTILO DEL NAVBAR ----------  */

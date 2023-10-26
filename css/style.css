@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
 /* ------------- ESTILO DEL NAVBAR ----------  */
 
 .navbar {
@@ -21,8 +24,9 @@
     height: 100%;
 
 }
- 
+
 .navbar-titulos a {
+    font-size: large;
     color: #000000;
     text-align: left;
     margin: 40px 40px;
@@ -33,3 +37,155 @@
 .navbar-items :hover {
     background-color: #5d6935;
 }
+
+
+
+/* ------------------ ESTILO HEADER DE INICIO -----------------------  */
+header {
+    background-color: rgba(227, 227, 227, 0.8);
+    /*VER SI NO ES UNA OPCIÓN PONER TODO EL BODY CON EL COLOR ESTE Y DESPUES COSAS PARTICULARES QUE LO PISEN. */
+    text-align-last: left;
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    border: 1px;
+    margin: 0px 0px 0px 0px;
+    font-family: "Caveat";
+    background-image: url("../img/fruits-7357732_640.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    /* font-size: 100px; POR QUÉ ESTOY CAMBIANDO EL TAMAÑO Y NO SE CAMBIA?? */
+}
+
+/* ---------- ESTILO MAIN: caja de información (envios, compra min, pagos)-------- */
+.info-container {
+    background-color: #ccd5ae;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+    padding: 15px;
+    gap: 5%;
+    /* ESTO NO PUEDE QUEDAR EN PX PORQUE QUEDA FIJO Y APARECE SCROLL HORIZONTAL. */
+}
+
+.info-item {
+    background-color: #ffffffcc;
+    flex-wrap: wrap;
+    padding: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 110%;
+    text-align: center;
+}
+
+
+/* --------- ESTILO SECTION ---------------------  */
+
+
+section {
+    background-color: #ffffffcc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.boton-what {
+
+    /* QUIERO QUE ESTÉ EN EL CENTRO. */
+}
+
+
+
+
+/* -------------ESTILO FOOTER ---------------------- */
+footer {
+    background-color: #ccd5ae;
+    text-align-last: center;
+    padding: 16px;
+    margin: 10px 0px 0px 0px;
+    ;
+    /* font-family: "Caveat"; CAMBIAR A LETRA MÁS SERIA*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 5px;
+    /*POR QUÉ LO CAMBIO Y NO SE MODIFICA????? */
+}
+
+
+
+
+
+
+
+
+
+
+/* ----------------- MEDIA QUERIES DE AMIGOS CALLEJEROS PARA SER RESPONSIVE ---------------  */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .caja-imagen {
+        width: 50%;
+    }
+
+    .grid-item {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .caja-imagen {
+        width: 33%;
+    }
+
+    .grid-item {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .caja-imagen {
+        width: 25%;
+    }
+
+    .grid-item {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+
+
+
+/* *************************PREGUNTAS FRECUENTES ********************************** */
+
+/* ------------ESTILO DE DESPLEGABLES ---------- */
+.acordeon {
+    background-color: #ccd5ae;
+    color: #000000;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 25px;
+}
+
+.active,
+.acordeon:hover {
+    background-color: #6fc05b;
+}
+
+.panel {
+    height: fit-content;
+    padding: 10px;
+    /*indico padding de arriba - abajo y izq - derecha*/
+    display: none;
+    /*inicialmente esto no se va a ver */
+    background-color: #ffffffcc;
+    overflow: hidden;
+    /*en el caso que el contenido sobrepase el borde que se oculte*/
+}
+
+
+/* --------------------------------------------------------- */
