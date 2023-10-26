@@ -18,12 +18,15 @@
 </head>
 
 <body>
-  <ul class="navbar">
-    <li><a href="../index.html">Inicio</a></li>
-    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-    <li><a href="../pages/bolsones.html"> Bolsones</a>
-    <li><a href="../pages/preguntas.html">Preguntas frecuentes</a></li>
-  </ul>
+  <nav class="navbar">
+    <!-- <div><img src="img/corazon.png" alt=""></div> -->
+    <ul class="navbar-items">
+      <li class="navbar-titulos"><a href="../Pag-Campo/index.html">Inicio</a></li>
+      <li class="navbar-titulos"><a href="pages/nosotros.html">Nosotros</a></li>
+      <li class="navbar-titulos"><a href="pages/bolsones.html"> Bolsones</a></li>
+      <li class="navbar-titulos"><a href="pages/preguntas.html">Preguntas frecuentes</a></li>
+    </ul>
+  </nav>
 
 
   <!-- acá en main voy a poner las opciones de bolsones. -->
@@ -48,11 +51,11 @@
         <input type="number" id="cantidad3" name="cantidad" min="0" max="5">
         <br>
       </form>
-    </div> 
+    </div>
 
     <div class="caja">
       <h1>Bolsón 2: 5kg $3500</h1>
-      <h2>"Verduras Agroecológicas"</h2> 
+      <h2>"Verduras Agroecológicas"</h2>
       <ul>
         <li>Acelga</li><br>
         <li>Verdeo</li><br>
@@ -61,13 +64,13 @@
         <li>Cebolla</li><br>
         <li>Morrón</li><br>
         <li>lechuga</li><br>
-      </ul> 
+      </ul>
       <form action="">
         <label for="cantidad3">Agregar:</label>
         <br>
         <input type="number" id="cantidad3" name="cantidad" min="0" max="5">
         <br>
-      </form>      
+      </form>
     </div>
 
     <div class="caja">
@@ -92,7 +95,8 @@
   </main>
 
   <div class="flex-container">
-    <button type="button" onclick="alert('Tu selección fue agregada al carrito de compras.')">Agregar al carrito.</button>
+    <button type="button" onclick="alert('Tu selección fue agregada al carrito de compras.')">Agregar al
+      carrito.</button>
   </div>
 
   <section class="flex-container">

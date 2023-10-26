@@ -26,13 +26,15 @@
 
 <body>
 
-  <ul class="navbar">
-    <li><a href="../index.html">Inicio</a></li>
-    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-    <li><a href="../pages/bolsones.html"> Bolsones</a>
-    <li><a href="../pages/preguntas.html">Preguntas frecuentes</a></li>
-  </ul>
-
+  <nav class="navbar">
+    <!-- <div><img src="img/corazon.png" alt=""></div> -->
+    <ul class="navbar-items">
+      <li class="navbar-titulos"><a href="../Pag-Campo/index.html">Inicio</a></li>
+      <li class="navbar-titulos"><a href="pages/nosotros.html">Nosotros</a></li>
+      <li class="navbar-titulos"><a href="pages/bolsones.html"> Bolsones</a></li>
+      <li class="navbar-titulos"><a href="pages/preguntas.html">Preguntas frecuentes</a></li>
+    </ul>
+  </nav>
 
 
   <main class="mi-main">
@@ -138,7 +140,7 @@
 
     // qué queremos que ocurra? 
     for (let i = 0; i < elementosAcordeon.length; i++) {
-      elementosAcordeon[i].addEventListener("click", function (){
+      elementosAcordeon[i].addEventListener("click", function () {
         this.classList.toggle("active"); //asi le asigno la clase activo o la saco en función de si está activada o no. 
         let panel = this.nextElementSibling; //agarra el elemento hermano, en la misma jerarquia
         if (panel.style.display == "block") {
