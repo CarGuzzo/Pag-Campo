@@ -46,12 +46,11 @@
 
 
 
-
 /* ------------------ ESTILO HEADER (de todas las páginas) -----------------------  */
 header {
-    background-color: rgba(227, 227, 227, 0.8);
-    text-align-last: left;
-    text-align: justify;
+    background-color: rgb(241, 241, 230);
+    /* text-align-last: left; */
+    text-align: left;
     width: 100%;
     height: fit-content;
     border: 1px;
@@ -60,12 +59,16 @@ header {
     background-image: url("../img/fruits-7357732_640.png");
     background-repeat: no-repeat;
     background-position: right center;
+    background-color: #f7eef7;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     header{
         padding: 25px;
+    }
+    .navbar-items{
+        flex-direction: column;
     }
 }
 
@@ -74,12 +77,18 @@ header {
     header{
         padding: 25px;
     }
+    .navbar-items{
+        flex-direction: column;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     header{
         padding: 50px;
+    }
+    .navbar-items{
+        flex-direction: row;
     }
 }
 
@@ -133,7 +142,7 @@ p{
 /* -------------ESTILO FOOTER ---------------------- */
 footer {
     background-color: #ccd5ae;
-    text-align-last: center;
+    text-align: center;
     padding: 16px;
     margin: 10px 0px 0px 0px;
     font-family: 'Times New Roman', Times, serif;
@@ -208,7 +217,7 @@ footer {
 }
 
 .acordeon:hover {
-    background-color: #6fc05b;
+    background-color: #6fc05bcb;
 }
 
 .panel {
@@ -224,8 +233,13 @@ footer {
 
 
 /* ------------------------ ESTILO FORMULARIO ----------------- */
+.contactanos{
+    font-size: 30px;
+    text-align: center;
+}
+
 #seccion-formulario{
-    background-color: rgb(247, 255, 178);
+    background-color: rgb(230, 238, 192);
     padding: 20px;
 }
 
@@ -337,6 +351,8 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    /* width: 30%; */
+
 } 
 
 .bolson-nro{
@@ -382,7 +398,7 @@ footer {
     padding: 15px 30px;
     border-radius: 8px;
     border: 2px solid grey;
-    width: 50%;
+    /* width: 50%; */
     font-family: "Sono";
     font-size: 20px;
     
@@ -390,4 +406,25 @@ footer {
 #boton-agregar-carrito:hover {
     background-color: #6fc05b ;
 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #boton-agregar-carrito{
+        width: 80%;
+    }
+
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #boton-agregar-carrito{
+        width: 80%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #boton-agregar-carrito{
+        width: 50%;
+    }
 }
