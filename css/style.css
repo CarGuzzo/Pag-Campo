@@ -43,22 +43,49 @@
 
 
 
-/* ------------------ ESTILO HEADER DE INICIO -----------------------  */
+/* ------------------ ESTILO HEADER (de todas las páginas) -----------------------  */
 header {
     background-color: rgba(227, 227, 227, 0.8);
-    /*VER SI NO ES UNA OPCIÓN PONER TODO EL BODY CON EL COLOR ESTE Y DESPUES COSAS PARTICULARES QUE LO PISEN. */
     text-align-last: left;
+    text-align: justify;
     width: 100%;
     height: fit-content;
-    padding: 50px;
     border: 1px;
     margin: 0px 0px 0px 0px;
     font-family: "Caveat";
     background-image: url("../img/fruits-7357732_640.png");
     background-repeat: no-repeat;
     background-position: right center;
-    /* font-size: 100px; POR QUÉ ESTOY CAMBIANDO EL TAMAÑO Y NO SE CAMBIA?? */
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 25px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    header{
+        padding: 25px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    header{
+        padding: 50px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    header{
+        padding: 50px;
+    } 
+}
+
 
 /* ---------- ESTILO MAIN: caja de información (envios, compra min, pagos)-------- */
 .info-container {
@@ -83,17 +110,17 @@ header {
 
 /* --------- ESTILO SECTION ---------------------  */
 
-
-.seccion-bolsones {
+.seccion-inicio{
     display: flex;
-    flex-wrap: wrap;
-    background-color: #ffffffcc;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px
 }
 
-.boton-what {
-    /* QUIERO QUE ESTÉ EN EL CENTRO. */
-}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    margin: 0;
+} 
 
 
 
@@ -104,8 +131,6 @@ footer {
     text-align-last: center;
     padding: 16px;
     margin: 10px 0px 0px 0px;
-    ;
-    /* font-family: "Caveat"; CAMBIAR A LETRA MÁS SERIA*/
     font-family: 'Times New Roman', Times, serif;
     font-size: 5px;
     /*POR QUÉ LO CAMBIO Y NO SE MODIFICA????? */
@@ -113,55 +138,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-/* ----------------- MEDIA QUERIES DE AMIGOS CALLEJEROS PARA SER RESPONSIVE ---------------  */
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .caja-imagen {
-        width: 50%;
-    }
-
-    .grid-item {
-        width: 100%;
-        padding: 10px;
-    }
-
-
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .caja-imagen {
-        width: 33%;
-    }
-
-    .grid-item {
-        width: 100%;
-        padding: 10px;
-    }
-
-
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .caja-imagen {
-        width: 25%;
-    }
-
-    .grid-item {
-        width: 100%;
-        padding: 10px;
-    }
-
-}
 
 /* **************************** N O S O T R O S ************************** */
 
@@ -190,28 +166,20 @@ footer {
         flex-direction: column;
     }
 }
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     .caja-donde-encontrarnos {
         flex-direction: column;
     }
 }
-
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     .caja-donde-encontrarnos {
         flex-direction: row;
     }
 }
-
-
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
-
-
-
-
 
 
 
@@ -223,12 +191,13 @@ footer {
     background-color: #ccd5ae;
     color: #000000;
     cursor: pointer;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 25px;
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .acordeon:hover {
@@ -256,6 +225,7 @@ footer {
 #area-formulario{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .label{
@@ -278,6 +248,13 @@ footer {
 	border: 3px solid #0075ff;	
 	outline: none;
 	box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4); /*el último nro es la transparencia*/
+}
+
+.botones-formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20%;
 }
 
 
@@ -313,10 +290,6 @@ footer {
     }    
 }
 
-
-
-
-
 /* --------------------------------------------------------- */
 
 
@@ -325,6 +298,13 @@ footer {
 
 #seccion-bolsones{
     background-color: #ccd5ae;
+}
+
+.seccion-bolsones {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffffcc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -341,7 +321,7 @@ footer {
     margin: 10px;
     font-size: 10px; /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
     border-style: solid;
-    border-color: #000000;
+    border-color: #c0bfbf;
     border-radius: 4%; /*lo redondeado de las esquinas*/
 }
 
@@ -386,7 +366,6 @@ footer {
     padding: 20px;
     background-color: beige;
 }
-
 #boton-agregar-carrito{   
     padding: 15px 30px;
     border-radius: 8px;
