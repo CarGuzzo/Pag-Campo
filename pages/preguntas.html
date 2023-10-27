@@ -101,7 +101,7 @@
   </main>
 
 
-  <section>
+  <section id="seccion-formulario">
 
     <h2>¿Tenés alguna otra duda? Contáctanos!</h2>
 
@@ -129,15 +129,17 @@
         cols="40" rows="10"></textarea>
       <br>
 
-      <input type="submit">
+      <input type="submit" onclick="return enviarFormulario()"> 
+      <!-- onclick significa que cuando toque va a ejecutar la función enviarFormulario() que la voy a definir en JS. -->
       <input type="reset">
 
-    </form>
+    <!-- Primer prueba fallida de validar </form>
+    <div id="error"></div> -->
 
   </section>
 
   <footer>
-    <h3>Copyright - 2023 Del Campo a la mesa</h3>
+    <h5>Copyright - 2023 Del Campo a la mesa</h5>
 
   </footer>
 
@@ -157,6 +159,38 @@
       })
 
     }
+
+// PRIMER INTENTO DE VALIDACIÓN FALLIDO 
+    // var nombre= document.getElementById("inputNombre");
+    // var mail= document.getElementById("mail");
+    // var error= document.getElementById("error");
+    // error.style.color="red";
+
+
+    // function enviarFormulario(){
+    //   console.log("Enviando Formulario..."); //este mensaje aparece en la consola y desaparece enseguida porque el formulario se está enviando por defecto.
+    //   return false; //impide que el formulario se envie por defecto
+
+    //   var mensajesError = []; //creo un arreglo vacio para almacenar los mensajes de error que puedan ocurrir al validar el form. 
+
+    //   if(nombre.value == null || nombre.value === ""){
+    //     mensajesError.push("Ingresa tu nombre.");
+
+    //   }
+
+    //   if(mail.value === null || mail.value === ""){
+    //     mensajesError.push("Ingresa un mail válido.");
+    //   } 
+      
+    //   error.innerHTML = mensajesError.join(",");
+
+
+
+    //   return false //impide que el formulario se envie por defecto.    
+
+    // }
+
+
 
   </script>
 

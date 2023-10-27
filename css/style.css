@@ -65,7 +65,7 @@ header {
     grid-template-columns: auto auto auto;
     padding: 15px;
     gap: 5%;
-    /* ESTO NO PUEDE QUEDAR EN PX PORQUE QUEDA FIJO Y APARECE SCROLL HORIZONTAL. */
+
 }
 
 .info-item {
@@ -81,13 +81,14 @@ header {
 /* --------- ESTILO SECTION ---------------------  */
 
 
-section {
+.seccion-bolsones {
+    display: flex;
+    flex-wrap: wrap;
     background-color: #ffffffcc;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .boton-what {
-
     /* QUIERO QUE ESTÉ EN EL CENTRO. */
 }
 
@@ -127,6 +128,8 @@ footer {
         width: 100%;
         padding: 10px;
     }
+
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -139,7 +142,10 @@ footer {
         width: 100%;
         padding: 10px;
     }
+
+
 }
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
@@ -151,6 +157,7 @@ footer {
         width: 100%;
         padding: 10px;
     }
+
 }
 
 /* **************************** N O S O T R O S ************************** */
@@ -160,17 +167,18 @@ footer {
     column-gap: 10px;
     margin: 10px;
 }
-.contenedor-text { 
+
+.contenedor-text {
     text-align: center;
     padding: 20px;
     background-color: #ccd5ae;
     flex-basis: 50px;
 
-   
+
 }
 
-.contenedor-iframe{
-    flex-grow:5;
+.contenedor-iframe {
+    flex-grow: 5;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -189,7 +197,7 @@ footer {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .caja-donde-encontrarnos{
+    .caja-donde-encontrarnos {
         flex-direction: row;
     }
 }
@@ -197,16 +205,6 @@ footer {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
-
-
-
-
-
-
-
-
-/* ************************ B O L S O N E S ***************************** */
-
 
 
 
@@ -246,4 +244,61 @@ footer {
 }
 
 
+
+#seccion-formulario{
+    background-color: bisque;
+    padding: 20px;
+}
+
+
+
 /* --------------------------------------------------------- */
+
+
+
+/* ************************ B O L S O N E S ***************************** */
+
+#seccion-bolsones{
+    background-color: #ccd5ae;
+
+}
+
+
+.bolsones-flex-container {
+    display: flex;
+    /*por haber puesto esto lo que haya adentro lo trata como elemento de linea*/
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.bolsones-flex-container>div {
+    background-color: #ffffffcc;
+    margin: 10px;
+    font-size: 10px;
+    /*AUNQUE CAMBIO ESTO NO LO MODIFICA, DEBE SER QUE CAR YA LE ASIGNÓ TAMAÑO A ESE ELEMENTO PUNTUALMENTE, VER!!!*/
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 4%;
+    /*lo redondeado de las esquinas*/
+}
+
+#boton-flex-container{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    background-color: beige;
+}
+
+#boton-agregar-carrito{
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 2px solid grey;
+    width: 50%;
+    
+}
+#boton-agregar-carrito:hover {
+    background-color: #6fc05b ;
+
+}
