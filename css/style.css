@@ -70,20 +70,20 @@ header {
         content: "";
         position: absolute;
         /*para que sea de = tamaño que el padre*/
-        height: 100%;
+        height:100% ;
+        /* width: 100%; */
         top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;
         /*todo en 0 para que no colapse  */
         background-image: url("../img/fruits-7357732_640.png");
-        background-size: cover;
+        background-size:auto;
+        background-repeat: no-repeat;
         background-position: top center;
         opacity: 0.20;
     }
 }
-
-
 
 h1 h3 {
     position: relative;
