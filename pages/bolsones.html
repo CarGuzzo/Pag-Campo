@@ -18,93 +18,106 @@
 </head>
 
 <body>
-  <ul>
-    <li><a href="../index.html">Inicio</a></li>
-    <li><a href="../pages/nosotros.html">Nosotros</a></li>
-    <li><a href="../pages/bolsones.html"> Bolsones</a>
-    <li><a href="../pages/preguntas.html">Preguntas frecuentes</a></li>
-  </ul>
+  <nav class="navbar">
+    <!-- <div><img src="img/corazon.png" alt=""></div> -->
+    <ul class="navbar-items">
+      <li class="navbar-titulos"><a href="../index.html">Inicio</a></li>
+      <li class="navbar-titulos"><a href="../pages/nosotros.html">Nosotros</a></li>
+      <li class="navbar-titulos"><a href="../pages/bolsones.html"> Bolsones</a></li>
+      <li class="navbar-titulos"><a href="../pages/preguntas.html">Preguntas frecuentes</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1> Elegí tu bolsón!</h1>
+  </header>
 
 
   <!-- acá en main voy a poner las opciones de bolsones. -->
   <!-- ver forma menos "rudimentaria" de poner los li uno abajo del otro que br -->
-  <main>
-    <div>
-      <h1>Bolsón 1: 8kg $4000</h1>
-      <h2>"Verduras en Transición"</h2>
-      <ul>
-        <li>Acelga</li><br>
-        <li>Remolacha</li><br>
-        <li>Verdeo</li><br>
-        <li>Zapallo Anco</li><br>
-        <li>Zanahoria</li><br>
-        <li>Cebolla</li><br>
-        <li>Morrón</li><br>
-        <li>Lechuga</li><br>
-      </ul>
-      <form action="">
-        <label for="cantidad3">Agregar:</label>
-        <br>
-        <input type="number" id="cantidad3" name="cantidad" min="0" max="5">
-        <br>
-      </form>
-    </div> 
+  <section id="seccion-bolsones">
+    <main class="bolsones-flex-container">
+      <div class="caja">
+        <h1 class="bolson-nro">Bolsón 1: 8kg $4000</h1>
+        <h2 class="bolson-nombre">"Verduras en Transición"</h2>
+        <ul class="lista-bolsones">
+          <li>Acelga</li><br>
+          <li>Remolacha</li><br>
+          <li>Verdeo</li><br>
+          <li>Zapallo Anco</li><br>
+          <li>Zanahoria</li><br>
+          <li>Cebolla</li><br>
+          <li>Morrón</li><br>
+          <li>Lechuga</li><br>
+        </ul>
+        <form class="caja-boton-agregar" action="">
+          <label for="cantidad3">Agregar:</label>
+          <br>
+          <input type="number" class="agregar-boton" id="cantidad3" name="cantidad" min="0" max="5">
+          <br>
+        </form>
+      </div>
 
-    <div>
-      <h1>Bolsón 2: 5kg $3500</h1>
-      <h2>"Verduras Agroecológicas"</h2> 
-      <ul>
-        <li>Acelga</li><br>
-        <li>Verdeo</li><br>
-        <li>Zapallo Anco</li><br>
-        <li>Zanahoria</li><br>
-        <li>Cebolla</li><br>
-        <li>Morrón</li><br>
-        <li>lechuga</li><br>
-      </ul> 
-      <form action="">
-        <label for="cantidad3">Agregar:</label>
-        <br>
-        <input type="number" id="cantidad3" name="cantidad" min="0" max="5">
-        <br>
-      </form>      
-    </div>
+      <div class="caja">
+        <h1 class="bolson-nro">Bolsón 2: 5kg $3500</h1>
+        <h2 class="bolson-nombre">"Verduras Agroecológicas"</h2>
+        <ul class="lista-bolsones">
+          <li>Acelga</li><br>
+          <li>Verdeo</li><br>
+          <li>Zapallo Anco</li><br>
+          <li>Zanahoria</li><br>
+          <li>Cebolla</li><br>
+          <li>Morrón</li><br>
+          <li>lechuga</li><br>
+        </ul>
+        <form class="caja-boton-agregar" action="">
+          <label for="cantidad3">Agregar:</label>
+          <br>
+          <input type="number" class="agregar-boton" id="cantidad3" name="cantidad" min="0" max="5">
+          <br>
+        </form>
+      </div>
 
-    <div>
-      <h1>Bolsón 3: 6kg $5500</h1>
-      <h2>Frutas</h2>
-      <ul>
-        <li>Banana</li><br>
-        <li>Mandarina</li><br>
-        <li>Naranja</li><br>
-        <li>Manzana</li><br>
-        <li>Pera</li><br>
-        <li>Limón</li><br>
-        <li>Frutillas</li><br>
-      </ul>
-      <form action="">
-        <label for="cantidad3">Agregar:</label>
-        <br>
-        <input type="number" id="cantidad3" name="cantidad" min="0" max="5">
-        <br>
-      </form>
-    </div>
+      <div class="caja">
+        <h1 class="bolson-nro">Bolsón 3: 6kg $5500</h1>
+        <h2 class="bolson-nombre">"Frutas"</h2>
+        <ul class="lista-bolsones">
+          <li>Banana</li><br>
+          <li>Mandarina</li><br>
+          <li>Naranja</li><br>
+          <li>Manzana</li><br>
+          <li>Pera</li><br>
+          <li>Limón</li><br>
+          <li>Frutillas</li><br>
+        </ul>
+        <form class="caja-boton-agregar" action="">
+          <label for="cantidad3">Agregar:</label>
+          <br>
+          <input type="number" class="agregar-boton" id="cantidad3" name="cantidad" min="0" max="5">
+          <br>
+        </form>
+      </div>
+    </main>
 
-
-  </main>
-
-  <section>
-    <div class="grid-container">
-      <div class="grid-item">Envíos sin costo <br> en Zona Sur</div>
-      <div class="grid-item">Compra mínima <br> $2000</div>
-      <div class="grid-item">Medios de pago: <br> Efectivo - Mercado Pago</div>
+    <div id="boton-flex-container">
+      <button id="boton-agregar-carrito" type="button" onclick="alert('Tu selección fue agregada al carrito de compras.')">Agregar al
+        carrito.</button>
     </div>
   </section>
 
 
+  <main>
+    <div class="info-container">
+      <div class="info-item">Envíos sin costo <br> en Zona Sur</div>
+      <div class="info-item">Compra mínima <br> $2000</div>
+      <div class="info-item">Medios de pago: <br> Efectivo - Mercado Pago</div>
+    </div>
+
+  </main>
+
 
   <footer>
-    <h3>Copyright - 2023 Del Campo a la mesa</h3>
+    <h5>Copyright - 2023 Del Campo a la mesa</h5>
 
   </footer>
 </body>
