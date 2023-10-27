@@ -105,36 +105,36 @@
 
     <h2>¿Tenés alguna otra duda? Contáctanos!</h2>
 
-    <form action="">
+    <form id="area-formulario" action="">
 
-      <label for="inputNombre">Nombre:</label>
+      <label for="inputNombre" class="label">Nombre:</label>
       <br>
       <!-- agrego atributo name a cada input, se almacenará el dato con esta referencia (backend) -->
-      <input type="text" id="inputNombre" name="nombre">
+      <input type="text" class="formulario-input" id="inputNombre" name="nombre">
       <br>
 
-      <label for="inputApellido">Apellido:</label>
+      <label for="inputApellido" class="label">Apellido:</label>
       <br>
-      <input type="text" id="inputApellido" name="Apellido">
-      <br>
-
-      <label for="mail">E-mail de contacto:</label>
-      <br>
-      <input type="email" id="mail" name="mail" placeholder="juanperez@mail.com" required>
+      <input type="text" class="formulario-input" id="inputApellido" name="Apellido">
       <br>
 
-      <label for="textAreaMensaje">Comentario</label>
+      <label for="mail" class="label">E-mail de contacto *</label>
       <br>
-      <textarea id="textAreaMensaje" name="mensaje" placeholder="Dejanos tu mensaje y te contestaremos a la brevedad. "
-        cols="40" rows="10"></textarea>
+      <input type="email" class="formulario-input" id="mail" name="mail" placeholder="juanperez@mail.com" required>
       <br>
 
+      <label for="textAreaMensaje" class="label">Comentario *</label>
+      <br>
+      <textarea class="formulario-input" id="textAreaMensaje" name="mensaje" placeholder="Dejanos tu mensaje y te contestaremos a la brevedad. "
+        cols="40" rows="10" required></textarea>
+      <br>
       <input type="submit" onclick="return enviarFormulario()"> 
       <!-- onclick significa que cuando toque va a ejecutar la función enviarFormulario() que la voy a definir en JS. -->
       <input type="reset">
 
-    <!-- Primer prueba fallida de validar </form>
-    <div id="error"></div> -->
+    </form>
+
+
 
   </section>
 
